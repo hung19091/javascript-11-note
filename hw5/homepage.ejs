@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/style.css">
+<div class="container">
+  <div class="notes">
+    <% notes.map((note, index) => { %>
+      <a href="/view?index=<%= index %>" class="note">
+        <h2><%= note.title %></h2>
+        <p><%= note.content %></p>
+      </a>
+    <% }) %>
+  </div>
+</div>

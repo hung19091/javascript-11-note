@@ -1,0 +1,40 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.notes {
+  margin: 2rem 0;
+}
+
+.note {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 3px 3px 10px #333;
+}
+
+.note + .note {
+  margin-top: 1rem;
+}
+
+.note > p {
+  font-size: 1.2rem;
+}
+
+.view {
+  margin: 2rem 0;
+}
+
+.view > h1 {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.view > p {
+  white-space: pre-line;
+  font-size: 1.2rem;
+}
