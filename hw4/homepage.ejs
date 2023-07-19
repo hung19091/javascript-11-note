@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/style.css">
+<div class="container">
+  <div class="notes">
+    <% notes.map(note => { %>
+      <div class="note">
+        <h2><%= note.title %></h2>
+        <p><%= note.content %></p>
+      </div>
+    <% }) %>
+  </div>
+</div>

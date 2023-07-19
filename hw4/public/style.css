@@ -1,0 +1,19 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.note {
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 3px 3px 10px #333;
+}
+
+.note + .note {
+  margin-top: 1rem;
+}
+
+.note > p {
+  font-size: 1.2rem;
+}
