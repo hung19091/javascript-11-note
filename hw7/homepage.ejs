@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/style.css">
+<header>
+  <h1>
+    <a href="/">我的日記</a>
+  </h1>
+  <nav>
+    <a href="/new">新增日記</a>
+  </nav>  
+</header>
+<div class="container">
+  <div class="notes">
+    <% notes.map((note, index) => { %>
+      <a href="/view?index=<%= index %>" class="note">
+        <form action="/delete?index=<%= index %>" method="post">
+          <button class="deleteNote" type="submit">&#x2716;</button>
+        </form>        
+        <h2><%= note.title %></h2>
+        <p><%= note.content %></p>
+      </a>
+    <% }) %>
+  </div>
+</div>

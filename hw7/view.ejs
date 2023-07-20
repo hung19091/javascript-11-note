@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/style.css">
+<header>
+  <h1>
+    <a href="/">我的日記</a>
+  </h1>
+  <nav>
+    <a href="/new">新增日記</a>
+  </nav>  
+</header>
+<div class="container">
+  <div class="view">
+    <div class="title">
+      <h1><%= note.title %></h1>
+      <a href="/edit?index=<%= index %>">編輯</a>
+    </div>
+    <p><%= note.content %></p>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/style.css">
+<header>
+  <h1>
+    <a href="/">我的日記</a>
+  </h1>
+  <nav>
+    <a href="/new">新增日記</a>
+  </nav>  
+</header>
+<div class="container">
+  <form action="/editing?index=<%= index %>" method="post">
+    <h2>新增日記</h2>
+    <input type="text" name="title" value="<%= note.title %>" placeholder="Title：">
+    <textarea name="content" placeholder="Content："><%=  note.content %></textarea>
+    <button type="submit">發送</button>
+  </form>
+</div>
